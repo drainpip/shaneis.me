@@ -12,7 +12,7 @@
     <meta name="msapplication-tooltip" content="Untitled" />
     <meta name="msapplication-window" content="width=1024;height=768" />
     <meta name="msapplication-starturl" content="http://www.untitledrecords.com" />
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -20,6 +20,38 @@
     <![endif]-->
 </head>
 <body>
+
+<div class="container">
+
+	<div class="row">
+    
+    	<div class="span3">
+    
+            <h1 class="brand">Shane<br>is<br>me</h1>
+        
+            <ul class="nav">
+                <li>Work History</li>
+                <li>Things I've Seen</li>
+                <li>Stories</li>
+                <li>GitHub</li>
+                <li>Contact Me</li>
+            </ul>
+        
+        </div><!-- .span3 -->
+        
+        <div class="span9">
+        
+        	<h2>This is a heading of some kind.</h2>
+        
+        	<p class="box">This expects a div with class instagram and a button element. When clicked, the button paginates through the search, allowing you to show more than the API limit of 20 photos.</p>
+            
+            <p class="box">This is a short paragraph</p>
+        
+        </div><!-- .span9 -->
+    
+    </div>
+    
+</div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.1.8.3.js">\x3C/script>')</script>
@@ -29,7 +61,6 @@
 		$.vegas('overlay');
 		$.vegas({
 			src:'img/test-bg.jpg',
-			fade:500,
 			valign:'bottom',
 			align:'right'
 		});
