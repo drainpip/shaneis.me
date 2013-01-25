@@ -19,7 +19,13 @@ h1, h2, h3, h4, li, p {
 
 .nav li.icon {
 	position:relative;
-	padding-right:18px;
+	padding-right:28px;
+}
+
+.nav li.icon img {
+	position:absolute;
+	right:6px;
+	top:6px;
 }
 
 .vegas-loading {

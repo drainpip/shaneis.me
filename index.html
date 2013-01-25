@@ -30,7 +30,7 @@
             <h1 class="brand">Shane<br>is<br>me</h1>
         
             <ul class="nav">
-                <li><a href="http://www.linkedin.com/pub/shane-duff/7/442/318">Work Experience</a> <img src="img/li.jpg"></li>
+                <li class="icon"><a href="http://www.linkedin.com/pub/shane-duff/7/442/318">Work Experience</a> <img src="img/li.jpg"></li>
                 <li>Things I've Seen</li>
                 <li>Stories</li>
                 <li><a href="https://github.com/drainpip">GitHub</a></li>
@@ -45,7 +45,11 @@
         
         	<p>We're moving like molasses. This will be built in the slow, grinding, hard-won road all great works of art travel. Prepare yourself like you're one of those guys in Kansas that thinks three and a half million pounds of wheat seed three stories underground in a cement bunker is the bare minimum.</p>
             
-            <p>This is a maid by the way.</p>
+            <p>This is the maid speaking by the way.</p>
+            
+            <div class="instagram"></div>
+
+            <div class="instagram-me"></div>
         
         </div><!-- .span9 -->
     
@@ -58,12 +62,27 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script>
+	$(document).ready(function() {  
 		$.vegas('overlay');
 		$.vegas({
 			src:'img/bg.jpg',
 			valign:'bottom',
 			align:'right'
 		});
+
+		$(".instagram").instagram({
+		  hash: 'love'
+		, clientId: '5eb6e334ce5b46f0aafcb62d1ab54ddc'
+		});
+		
+		
+		$(".instagram-me").instagram({
+		  userid: '33278947'
+		, show: 4
+		, clientId: '5eb6e334ce5b46f0aafcb62d1ab54ddc'
+		, accessToken: '33278947.5eb6e33.73c5d6a93eb94beca7c34b41a2b1a545'
+		});
+	});	
 	</script>
 </body>
 </html>
