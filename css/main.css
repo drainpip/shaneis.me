@@ -1,4 +1,4 @@
-h1, h2, h3, h4, li, p {
+h1, h2, h3, h4, li, p, .instagram-placeholder {
 	padding:5px;
 	background:#fff;
 	margin-bottom:5px;
@@ -26,6 +26,11 @@ h1, h2, h3, h4, li, p {
 	position:absolute;
 	right:6px;
 	top:6px;
+}
+
+.instagram-placeholder {
+	float:left;
+	margin-right:5px;
 }
 
 .vegas-loading {
