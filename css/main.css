@@ -1,59 +1,182 @@
-h1, h2, h3, h4, li, p, .instagram-placeholder {
-	padding:5px;
-	background:#fff;
-	margin-bottom:5px;
-	display:table !important;
+LI {
+	background-color: rgb(255, 255, 255);
+	display: table;
+	font-size: 16px;
+	height: 20px;
+	margin-bottom: 5px;
 }
 
-.brand {
-	line-height:50px;
+H2 {
+	background-color: rgb(255, 255, 255);
+	display: table;
+	font-size: 32px;
+	font-weight: bold;
+	height: 120px;
+	line-height: 40px;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	text-rendering: optimizelegibility;
+	width: 350px;
+	padding: 5px;
 }
 
-.nav {
-	margin:0;
+DIV DIV {
+	width: 360px;
 }
 
-.nav li {
-	font-size:16px;
+A {
+	color: rgb(0, 136, 204);
+	display: block;
+	height: 20px;
 }
 
-.nav li.icon {
-	position:relative;
-	padding-right:28px;
+BUTTON {
+	background-color: rgb(54, 54, 54);
+	background-image: -webkit-linear-gradient(top, rgb(68, 68, 68), rgb(34, 34, 34));
+	background-repeat: repeat-x;
+	border-bottom-color: rgba(0, 0, 0, 0.246094);
+	border-left-color: rgba(0, 0, 0, 0.0976562);
+	border-right-color: rgba(0, 0, 0, 0.0976562);
+	border-top-color: rgba(0, 0, 0, 0.0976562);
+	box-shadow: rgba(255, 255, 255, 0.199219) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.046875) 0px 1px 2px 0px;
+	box-sizing: border-box;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	height: 30px;
+	padding-bottom: 4px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 4px;
+	text-align: center;
+	text-shadow: rgba(0, 0, 0, 0.246094) 0px -1px 0px;
+	vertical-align: middle;
+	width: 61px;
+	border-style: solid;
+	border-width: 1px;
 }
 
-.nav li.icon img {
-	position:absolute;
-	right:6px;
-	top:6px;
+P {
+	background-color: rgb(255, 255, 255);
+	display: table;
+	margin-bottom: 5px;
+	padding: 5px;
 }
 
-.instagram-placeholder {
-	float:left;
-	margin-right:5px;
+BR {
+	height: 0px;
+	text-rendering: optimizelegibility;
+	width: 0px;
 }
 
-.vegas-loading {
-	-moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px;
-	background:#000 url(../img/loading.gif) no-repeat center center;
-	background:rgba(0, 0, 0, 0.7) url(../img/loading.gif) no-repeat center center;
-	height:32px;
-	left:20px;
-	position:fixed;
-	top:20px;
-	width:32px; 
-	z-index:0;
+H1 {
+	background-color: rgb(255, 255, 255);
+	display: table;
+	font-size: 39px;
+	font-weight: bold;
+	height: 150px;
+	line-height: 50px;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	text-rendering: optimizelegibility;
+	width: 136px;
+	padding: 5px;
 }
 
-.vegas-overlay {
-	background:transparent url(../img/overlays/04.png);
-	opacity:0.5;
-	z-index:-1;
+BODY {
+	background-color: rgb(255, 255, 255);
+	color: rgb(51, 51, 51);
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	height: 760px;
+	line-height: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 360px;
 }
 
 .vegas-background {
-	image-rendering: optimizeQuality;
-	-ms-interpolation-mode: bicubic;
-	z-index:-2;
-    max-width: none !important;
+	bottom: 0px;
+	display: block;
+	height: 300px;
+	position: fixed;
+	right: 0px;
+	vertical-align: middle;
+	width: 451px;
+	z-index: -2;
+	image-rendering: optimizequality;
+}
+
+.vegas-overlay {
+	background-image: url(http://shaneis.me/img/overlays/04.png);
+	height: 300px;
+	left: 0px;
+	opacity: 0.5;
+	position: fixed;
+	top: 0px;
+	width: 400px;
+	z-index: -1;
+}
+
+DIV IMG {
+	display: block;
+	height: 18px;
+	max-width: 100%;
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	vertical-align: middle;
+	width: 18px;
+}
+
+.icon {
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 28px;
+	padding-top: 5px;
+	position: relative;
+	width: 134px;
+}
+
+UL {
+	height: 100px;
+	list-style-type: none;
+	width: 360px;
+	padding: 0px;
+}
+
+.span3 {
+	box-sizing: border-box;
+	height: 265px;
+	min-height: 30px;
+}
+
+.span9 {
+	box-sizing: border-box;
+	height: 475px;
+	min-height: 30px;
+}
+
+.container-fluid {
+	height: 760px;
+	width: 360px;
+}
+
+.row-fluid {
+	height: 760px;
+}
+
+#home {
+	height: 300px;
+}
+
+#things-ive-seen {
+	height: 165px;
+}
+
+.instagram {
+	height: 0px;
+}
+
+.icon A {
+	width: 134px;
 }
