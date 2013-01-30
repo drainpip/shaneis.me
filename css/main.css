@@ -33,6 +33,11 @@ h1, h2, h3, h4, li, p, .instagram-placeholder {
 	margin-right:5px;
 }
 
+.instagram-placeholder a img {
+	height:150px;
+	width:150px;
+}
+
 .vegas-loading {
 	-moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px;
 	background:#000 url(../img/loading.gif) no-repeat center center;
