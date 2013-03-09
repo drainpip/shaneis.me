@@ -53,7 +53,6 @@
 
       if (settings.photoLink) {
         innerHtml = $('<a>')
-          .attr('target', '_blank')
           .attr('href', photo.link)
           .append(innerHtml);
       }
