@@ -27,6 +27,10 @@ h1, h2, h3, h4, li, p, .btn, .instagram-placeholder {
 	padding:2px 0 0;
 }
 
+.nav li a:hover {
+	background-color:transparent;
+}
+
 .nav li.icon {
 	position:relative;
 	padding-right:28px;
@@ -54,6 +58,6 @@ h1, h2, h3, h4, li, p, .btn, .instagram-placeholder {
 	padding:4px 2px 2px 4px;
 }
 
-.btn:hover, .instagram-placeholder:hover {
+.btn:hover, .instagram-placeholder:hover, .nav li:hover {
 	background-color:#f00;
 }
