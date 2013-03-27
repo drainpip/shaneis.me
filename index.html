@@ -8,31 +8,31 @@
     <meta name="description" content="Shane is me">
     <meta name="author" content="Shane">
     <meta name="keywords" content="Shane is me" />  
-    <meta name="application-name" content="Untitled Records" />
-    <meta name="msapplication-tooltip" content="Untitled" />
+    <meta name="application-name" content="Shane is me" />
+    <meta name="msapplication-tooltip" content="SI.M" />
     <meta name="msapplication-window" content="width=1024;height=768" />
-    <meta name="msapplication-starturl" content="http://www.untitledrecords.com" />
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <meta name="msapplication-starturl" content="http://shaneis.me" />
+    <link href="assets/css/bootstrap.3.0.0.min.css" rel="stylesheet" media="screen"> 
+    <link href="assets/css/main.css" rel="stylesheet" media="screen">    
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond/respond.js"></script>
+    <![endif]-->  
 </head>
 <body>
 
-<div class="container-fluid">
+<div class="container">
 
-	<div class="row-fluid">
+	<div class="row">
     
     	<div class="span3">
     
-            <h1 class="brand">Shane<br>is<br>me</h1>
+            <h1 class="brand">Shane<br>is<br>me<span class="cursor">|</span></h1>
         
             <ul class="nav">
-                <li class="icon"><a href="http://www.linkedin.com/pub/shane-duff/7/442/318">Work Experience</a> <img src="img/li.jpg"></li>
-                <li class="icon"><a href="http://drainpip.tumblr.com">Things I've Seen</a> <img src="img/tumblr.jpg"></li>
-                <li class="icon"><a href="https://github.com/drainpip">Code</a> <img src="img/git.jpg"></li>
+                <li class="icon"><a href="http://www.linkedin.com/pub/shane-duff/7/442/318">Work Experience</a> <img src="assets/img/li.jpg"></li>
+                <li class="icon"><a href="http://drainpip.tumblr.com">Things I've Seen</a> <img src="assets/img/tumblr.jpg"></li>
+                <li class="icon"><a href="https://github.com/drainpip">Code</a> <img src="assets/img/git.jpg"></li>
             </ul>
         
         </div><!-- .span3 -->
@@ -55,7 +55,7 @@
                 
                 <div class="instagram clearfix"></div>
                 
-                <button class="btn btn-inverse">More</button>
+                <button class="btn btn-link">More</button>
                 
             </div>
         
@@ -65,49 +65,43 @@
     
 </div>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.1.8.3.js">\x3C/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-	$(document).ready(function() {  
-		$.vegas('overlay');
-		$.vegas({
-			src:'img/bg.jpg',
-			valign:'bottom',
-			align:'right'
-		});	
-		
-		$(function(){
-		  var
-			insta_container = $(".instagram")
-		  , insta_next_url
-		
-		  insta_container.instagram({
-			  onComplete : function (photos, data) {
-			  insta_next_url = data.pagination.next_url
-			}
-		  })
-		
-		  $('button').on('click', function(){
-			var 
-			  button = $(this)
-			, text = button.text()
-		
-			if (button.text() != 'Loading…'){
-			  button.text('Loading…')
-			  insta_container.instagram({
-				  next_url : insta_next_url
-				, show : 20
-				, onComplete : function(photos, data) {
-				  insta_next_url = data.pagination.next_url
-				  button.text(text)
-				}
-			  })
-			}       
-		  }) 
-		});
-	});	
-	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/jquery.1.9.1.min.js">\x3C/script>')</script>
+  <script src="assets/js/bootstrap.3.0.0.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+  $(document).ready(function() {  
+    $(function(){
+      var
+      insta_container = $(".instagram")
+      , insta_next_url
+    
+      insta_container.instagram({
+        onComplete : function (photos, data) {
+        insta_next_url = data.pagination.next_url
+      }
+      })
+    
+      $('button').on('click', function(){
+      var 
+        button = $(this)
+      , text = button.text()
+    
+      if (button.text() != 'Loading…'){
+        button.text('Loading…')
+        insta_container.instagram({
+          next_url : insta_next_url
+        , show : 20
+        , onComplete : function(photos, data) {
+          insta_next_url = data.pagination.next_url
+          button.text(text)
+        }
+        })
+      }       
+      }) 
+    });	
+		setInterval ( "cursorAnimation()", 600 );		
+  });	
+  </script>
 </body>
 </html>
