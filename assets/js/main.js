@@ -49,6 +49,7 @@
       if (settings.photoLink) {
         innerHtml = $('<a>')
           .attr('href', photo.link)
+					.addClass('fancybox-media')
           .append(innerHtml);
       }
 
@@ -103,7 +104,7 @@
 
       url += "?" + $.param(params)
       
-	  url = "https://api.instagram.com/v1/users/33278947/media/recent?access_token=33278947.5eb6e33.73c5d6a93eb94beca7c34b41a2b1a545"
+	  	url = "https://api.instagram.com/v1/users/33278947/media/recent?access_token=33278947.5eb6e33.73c5d6a93eb94beca7c34b41a2b1a545"
       return url;
     }
     

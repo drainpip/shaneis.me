@@ -103,5 +103,19 @@
 		setInterval ( "cursorAnimation()", 600 );		
   });	
   </script>
+  <!-- Fancybox -->
+  <script type="text/javascript" src="assets/fancybox.2.1.4/jquery.fancybox.pack.js?v=2.1.4"></script>
+  <link rel="stylesheet" type="text/css" href="assets/fancybox.2.1.4/jquery.fancybox.css?v=2.1.4" media="screen" /> 
+  <script type="text/javascript" src="assets/fancybox.2.1.4/helpers/jquery.fancybox-media.js?v=1.0.0"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+			$('.fancybox-media').fancybox({
+				helpers : {
+					media : {}
+				}
+			});
+		});	
+  </script>
+  <!-- /Fancybox -->  
 </body>
 </html>
