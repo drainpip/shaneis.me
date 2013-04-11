@@ -151,7 +151,7 @@
 			instagram : {
 				matcher : /(instagr\.am|instagram\.com)\/p\/([a-zA-Z0-9_\-]+)\/?/i,
 				type : 'image',
-				url  : '//$1/p/$2/media/'
+				url  : '//$1/p/$2/media/?size=l'
 			},
 			google_maps : {
 				matcher : /maps\.google\.([a-z]{2,3}(\.[a-z]{2})?)\/(\?ll=|maps\?)(.*)/i,

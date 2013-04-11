@@ -49,7 +49,9 @@
       if (settings.photoLink) {
         innerHtml = $('<a>')
           .attr('href', photo.link)
-					.addClass('fancybox-media')
+		  .attr('rel', 'instagram-gallery')
+		  .attr('title', photo.caption.text)
+		  .addClass('fancybox-media')
           .append(innerHtml);
       }
 
