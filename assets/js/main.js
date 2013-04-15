@@ -138,6 +138,7 @@
   };
 })(jQuery);
 
+$(document).ready(function() {  
 $(function(){
 	var
 	insta_container = $(".instagram")
@@ -179,3 +180,4 @@ function cursorAnimation()
 		opacity: 1
 	}, "fast", "swing");
 }
+});
