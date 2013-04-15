@@ -85,6 +85,17 @@
 			padding : '0'
 		});
 	});	
+	function cursorAnimation()
+	{
+		$(".cursor").animate(
+		{
+			opacity: 0
+		}, "fast", "swing").animate(
+		{
+			opacity: 1
+		}, "fast", "swing");
+	}	
+	setInterval ( "cursorAnimation()", 600 );	
 </script>
 <!-- /Fancybox -->  
 

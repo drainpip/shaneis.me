@@ -139,45 +139,33 @@
 })(jQuery);
 
 $(document).ready(function() {  
-$(function(){
-	var
-	insta_container = $(".instagram")
-	, insta_next_url
-
-	insta_container.instagram({
-		onComplete : function (photos, data) {
-		insta_next_url = data.pagination.next_url
-	}
-	})
-
-	$('button').on('click', function(){
-	var 
-		button = $(this)
-	, text = button.text()
-
-	if (button.text() != 'Loading…'){
-		button.text('Loading…')
+	$(function(){
+		var
+		insta_container = $(".instagram")
+		, insta_next_url
+	
 		insta_container.instagram({
-			next_url : insta_next_url
-		, show : 20
-		, onComplete : function(photos, data) {
+			onComplete : function (photos, data) {
 			insta_next_url = data.pagination.next_url
-			button.text(text)
 		}
 		})
-	}       
-	}) 
-});	
-setInterval ( "cursorAnimation()", 600 );	
-
-function cursorAnimation()
-{
-	$(".cursor").animate(
-	{
-		opacity: 0
-	}, "fast", "swing").animate(
-	{
-		opacity: 1
-	}, "fast", "swing");
-}
+	
+		$('button').on('click', function(){
+		var 
+			button = $(this)
+		, text = button.text()
+	
+		if (button.text() != 'Loading…'){
+			button.text('Loading…')
+			insta_container.instagram({
+				next_url : insta_next_url
+			, show : 20
+			, onComplete : function(photos, data) {
+				insta_next_url = data.pagination.next_url
+				button.text(text)
+			}
+			})
+		}       
+		}) 
+	});	
 });
