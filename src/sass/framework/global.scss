@@ -101,3 +101,10 @@ a:link    { color: $blue; }
 a:visited { color: $purple; }
 a:hover   { color: $aqua; }
 a:active  { color: $orange; }
+
+#pixie {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
