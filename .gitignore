@@ -20,7 +20,7 @@ dwsync.xml
 config.ini
 
 # npm
-node_modules
+*node_modules*
 
 # Sublime
 *.sublime*
