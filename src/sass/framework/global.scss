@@ -21,11 +21,15 @@ body {
   padding: 0;
   margin: 0;
   font-size: $base-font-size;
-  font-family: $body-font-family-sans;
+  font-family: $body-font-family-serif;
   font-weight: $body-font-weight;
   font-style: $body-font-style;
   line-height: $base-line-height;
   position: relative;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $body-font-family-sans;
 }
 
 // Grid Defaults to get images and embeds to work properly
