@@ -24,6 +24,3 @@ config.ini
 
 # Sublime
 *.sublime*
-
-# Keep dist hidden
-dist
