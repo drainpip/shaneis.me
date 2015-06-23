@@ -1,0 +1,13 @@
+// .container by itself will simply center the main content and apply a small padding for whitespace around the edges
+.container {
+  max-width: ($row-width + $column-gutter);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $column-gutter / 2;
+  padding-right: $column-gutter / 2;
+  @extend %clearfix;
+  @media #{$small-only} {
+    padding-left: $column-gutter / 4;
+    padding-right: $column-gutter / 4;
+  }
+}

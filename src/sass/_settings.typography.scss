@@ -1,0 +1,24 @@
+$base-body-bg: $white;
+$base-text-color: $black;
+$base-line-height: 1.4;
+
+// Used in all typography size calculations
+$paragraph-font-size: 1em;
+
+// Optional default font family stuff
+$body-font-family-sans: sans-serif;
+$body-font-family-serif: serif;
+$body-font-weight: 400;
+$body-font-style: normal;
+
+// We use these to control text direction settings
+$text-direction: ltr;
+$default-float: left;
+$opposite-direction: right;
+@if $text-direction == ltr {
+  $default-float: left !global;
+  $opposite-direction: right !global;
+} @else {
+  $default-float: right !global;
+  $opposite-direction: left !global;
+}

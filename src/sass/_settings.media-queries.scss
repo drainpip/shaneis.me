@@ -1,0 +1,49 @@
+$screen: "only screen" !default;
+
+$landscape: "#{$screen} and (orientation: landscape)" !default;
+$portrait: "#{$screen} and (orientation: portrait)" !default;
+$four-thirds: "#{$screen} and (max-aspect-ratio: 4/3)" !default;
+
+$small-up: $screen !default;
+$small-only: "#{$screen} and (max-width: 40em)" !default;
+$small-only-portrait: "#{$portrait} and (max-width: 40em)" !default;
+
+$medium-up: "#{$screen} and (min-width: 40.063em)" !default;
+$medium-only: "#{$screen} and (min-width: 40.063em) and (max-width: 64em)" !default;
+$medium-down: "#{$screen} and (max-width: 63em)" !default;
+$medium-down-portrait: "#{$portrait} and (max-width: 64em)" !default;
+
+$large-up: "#{$screen} and (min-width: 64.063em)" !default;
+$large-only: "#{$screen} and (min-width: 64.063em) and (max-width: 90em)" !default;
+
+$xlarge-up: "#{$screen} and (min-width: 90.063em)" !default;
+$xlarge-only: "#{$screen} and (min-width: 90.063em) and (max-width: 120em)" !default;
+
+$xxlarge-up: "#{$screen} and (min-width: 120.063em)" !default;
+$xxlarge-only: "#{$screen} and (min-width: 120.063em) and (max-width: 99999999em)" !default;
+
+/*
+Material Design Adaptive Breakpoints
+
+http://www.google.com/design/spec/layout/adaptive-ui.html#adaptive-ui-breakpoints
+
+These were adapted to em values for our use.
+
+Also, the below variables are mostly to be used in specific cases for positioning elements, etc., not yet basing the entire grid/visibility system from this
+*/
+$mobile-small: "#{$portrait} and (min-width: 0) and (max-width: 22em)" !default;
+$mobile-large: "#{$portrait} and (min-width: 22.063em)" !default;
+$mobile-small-landscape: "#{$landscape} and (min-width: 0) and (max-width: 30em)" !default;
+$mobile-large-landscape: "#{$landscape} and (min-width: 30.063em)" !default;
+
+$tablet-small: "#{$portrait} and (min-width: 37em)" !default;
+$tablet-large: "#{$portrait} and (min-width: 37.063em) and (max-width: 52em)" !default;
+$tablet-small-landscape: "#{$landscape} and (min-width: 37em) and (max-width: 60em)" !default;
+$tablet-large-landscape: "#{$landscape} and (min-width: 60.063em)" !default;
+
+$desktop-x-small: "#{$four-thirds} and (min-width: 0) and (max-width: 30em)" !default;
+$desktop-small: "#{$four-thirds} and (min-width: 30.063em) and (max-width: 52em)" !default;
+$desktop-medium: "#{$four-thirds} and (min-width: 52.063em) and (max-width: 80em)" !default;
+$desktop-large: "#{$screen} and (min-width: 80.063em) and (max-width: 100em)" !default;
+$desktop-x-large: "#{$screen} and (min-width: 100.063em) and (max-width: 120em)" !default;
+$desktop-gigantic: "#{$screen} and (min-width: 120.063em)" !default;
