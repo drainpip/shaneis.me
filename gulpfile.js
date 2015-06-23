@@ -37,7 +37,7 @@ gulp.task('styles', function() {
     }))
     .pipe(gulp.dest('dist/assets/css'))
     .pipe(rename({suffix: '.min'}))
-    .pipe(minifycss())
+    .pipe(minifycss({processImport:false}))
     .pipe(gulp.dest('dist/assets/css'))
     .pipe(livereload(lrserver));
 });
