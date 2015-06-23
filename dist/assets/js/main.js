@@ -202,7 +202,7 @@ function Circle() {
     g = con.createRadialGradient(this.x,this.y,0,this.x,this.y,(cr <= 0 ? 1 : cr));
     g.addColorStop(0.0, 'rgba(255,255,0,'+newo+')');
     g.addColorStop(this.stop, 'rgba(255,0,0,'+(newo*0.2)+')');
-    g.addColorStop(1.0, 'rgba(0,0,0,0.5)');
+    g.addColorStop(1.0, 'rgba(17,17,17,0.5)');
     con.fillStyle = g;
     con.fill();
   }
