@@ -6,10 +6,12 @@ $base-line-height: 1.4;
 $paragraph-font-size: 1em;
 
 // Optional default font family stuff
-$body-font-family-sans: sans-serif;
-$body-font-family-serif: serif;
+$body-font-family: sans-serif;
 $body-font-weight: 400;
 $body-font-style: normal;
+
+$heading-font-family: sans-serif;
+$heading-font-weight: 700;
 
 // We use these to control text direction settings
 $text-direction: ltr;
