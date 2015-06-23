@@ -27,3 +27,6 @@ config.ini
 
 # Sass
 .sass-cache*
+
+#SFTP
+*sftp-config.json
