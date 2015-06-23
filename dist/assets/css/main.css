@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:700);
+
 /*
 This project follows Inverted Triangle CSS (ITCSS) by
 Harry "CSS Wizardry" Roberts. Files should be organized
@@ -351,7 +353,7 @@ body {
 	position: relative;
 	background: #111111;
 	color: #dddddd;
-	font-family: sans-serif;
+	font-family: "Lora", serif;
 	font-size: 100%;
 	font-weight: 400;
 	line-height: 1.4;
@@ -365,7 +367,7 @@ h2 {
 h1,
 h2 {
 	margin: 0.5em 0;
-	font-family: sans-serif;
+	font-family: "Open Sans", sans-serif;
 }
 
 p {
