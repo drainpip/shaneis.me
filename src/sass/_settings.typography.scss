@@ -5,12 +5,14 @@ $base-line-height: 1.4;
 // Used in all typography size calculations
 $paragraph-font-size: 1em;
 
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:700);
+
 // Optional default font family stuff
-$body-font-family: sans-serif;
+$body-font-family: 'Lora', serif;
 $body-font-weight: 400;
 $body-font-style: normal;
 
-$heading-font-family: sans-serif;
+$heading-font-family: 'Open Sans', sans-serif;
 $heading-font-weight: 700;
 
 // We use these to control text direction settings
