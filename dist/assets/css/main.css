@@ -351,8 +351,8 @@ html {
 
 body {
 	position: relative;
-	background: #111111;
-	color: #dddddd;
+	background: white;
+	color: #111111;
 	font-family: "Lora", serif;
 	font-size: 100%;
 	font-weight: 400;
@@ -412,7 +412,7 @@ These get much more explicitly named: eg. products-list, etc.
 */
 
 .social-icon {
-	fill: white;
+	fill: #111111;
 }
 
 .icon-link svg {
