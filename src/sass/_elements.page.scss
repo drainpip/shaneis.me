@@ -1,10 +1,12 @@
 html {
   font-size: $base-font-size;
+  height: 100%;
 }
 
 body {
   position: relative;
-  background: $base-body-bg;
+  height: 100%;
+  background-color: $base-body-bg;
   color: $base-text-color;
   font-family: $body-font-family;
   font-size: 100%;
