@@ -4,7 +4,7 @@ var GAHelper = {};
 
   GAHelper.defaults = function() {
 
-    var _website = 'asus.com',
+    var _website = 'shaneis.me',
         _skipHREF = [
           'bit.ly',
           'goo.gl',
