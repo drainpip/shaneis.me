@@ -347,11 +347,13 @@ ul {
 
 html {
 	font-size: 16px;
+	height: 100%;
 }
 
 body {
 	position: relative;
-	background: white;
+	height: 100%;
+	background-color: white;
 	color: #111111;
 	font-family: "Lora", serif;
 	font-size: 100%;
@@ -371,7 +373,7 @@ h2 {
 }
 
 p {
-	margin: 0 0 0.5em;
+	margin: 0 0 1em;
 	max-width: 50em;
 }
 
