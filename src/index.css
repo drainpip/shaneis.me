@@ -1,5 +1,56 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
+  color: #555;
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: 700;
+  margin-bottom: .25rem;
+}
+
+dd {
+  margin-bottom: 1rem;
+  margin-left: 0;
+}
+
+a {
+  border-bottom: 1px solid;
+  text-decoration: none;
 }
