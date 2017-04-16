@@ -2,7 +2,7 @@
   "name": "shaneis.me",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://drainpip.github.io/shaneis.me/",
+  "homepage": "http://shaneis.me/",
   "devDependencies": {
     "gh-pages": "^0.12.0",
     "normalize.css": "^6.0.0",
