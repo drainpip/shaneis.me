@@ -9,6 +9,8 @@ import ContentContainer from './patterns/containers/Content';
 import ExperimentsHome from './experiments/Index';
 import Home from './home/Index';
 import HomeHeader from './home/Header';
+import NotFound from './NotFound';
+import OrganizationHome from './organization/Index';
 import TopNav from './patterns/navigation/TopNav';
 import './App.css';
 
@@ -30,6 +32,8 @@ class App extends Component {
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/experiments/" component={ExperimentsHome} />
+                <Route path="/organization/" component={OrganizationHome} />
+                <Route component={NotFound} />
               </Switch>
             </ContentContainer>
           </section>
