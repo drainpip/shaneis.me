@@ -20,10 +20,10 @@ class App extends Component {
             <ContentContainer>
               <h1>Shane is me</h1>
               <p className="App-header__quote">"But who is wurs shod, than the shoemakers wyfe, With shops full of newe shapen shoes all hir lyfe?"</p>
-              <ul>
+              {/* <ul>
                 <li><NavLink exact to="/">Home</NavLink></li>
                 <li><NavLink to="/experiments/">Testing</NavLink></li>
-              </ul>
+              </ul> */}
             </ContentContainer>
           </header>
           <section className="App-body">
