@@ -11,6 +11,7 @@ html {
 body {
   color: #555;
   font-family: sans-serif;
+  line-height: 1.4;
   margin: 0;
   padding: 0;
 }
@@ -51,6 +52,18 @@ dd {
 }
 
 a {
-  border-bottom: 1px solid;
+  border: 1px solid;
+  color: #0074D9;
+  display: inline-block;
+  padding: 0 .25em;
   text-decoration: none;
+}
+
+a:active,
+a:focus {
+  color: #85144b;
+}
+
+a:visited {
+  color: #B10DC9;
 }
