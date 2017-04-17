@@ -51,12 +51,9 @@ dd {
   margin-left: 0;
 }
 
-a {
-  border: 1px solid;
+a,
+a:default {
   color: #0074D9;
-  display: inline-block;
-  padding: 0 .25em;
-  text-decoration: none;
 }
 
 a:active,
@@ -66,4 +63,20 @@ a:focus {
 
 a:visited {
   color: #B10DC9;
+}
+
+a:disabled {
+  color: #AAAAAA;
+}
+
+p > a {
+  border: 1px solid;
+  display: inline-block;
+  padding: 0 .25em;
+  text-decoration: none;
+}
+
+p > a:hover {
+  background-color: #85144b;
+  color: #FFFFFF;
 }
