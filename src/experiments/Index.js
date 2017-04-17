@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = (props) => {
+const Index = (props) => {
   return (
     <article>
       <p>This is a test</p>
@@ -8,4 +8,4 @@ const Home = (props) => {
   );
 };
 
-export default Home;
+export default Index;
