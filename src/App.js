@@ -6,8 +6,10 @@ import {
 } from 'react-router-dom';
 
 import ContentContainer from './patterns/containers/Content';
-import Home from './home/Index';
 import ExperimentsHome from './experiments/Index';
+import Home from './home/Index';
+import HomeHeader from './home/Header';
+import TopNav from './patterns/navigation/TopNav';
 import './App.css';
 
 class App extends Component {
@@ -17,8 +19,10 @@ class App extends Component {
         <div className="App">
           <header className="App-header">
             <ContentContainer>
-              <h1>Shane is me</h1>
-              <p className="App-header__quote">"But who is wurs shod, than the shoemakers wyfe, With shops full of newe shapen shoes all hir lyfe?"</p>
+              <Switch>
+                <Route exact path="/" component={HomeHeader} />
+                <Route component={TopNav} />
+              </Switch>
             </ContentContainer>
           </header>
           <section className="App-body">

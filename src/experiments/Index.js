@@ -3,7 +3,7 @@ import React from 'react';
 const Index = (props) => {
   return (
     <article>
-      <p>This is a test</p>
+      <p>A React/MobX microwave controller is coming soon as my first experiment.</p>
     </article>
   );
 };
