@@ -1,0 +1,26 @@
+.TopNav {
+  margin: 0;
+  padding: 0;
+
+}
+
+  .TopNav > li {
+    float: left;
+    list-style: none;
+    margin-right: .25em;
+  }
+
+  .TopNav .TopNav__Link {
+    border: 1px solid;
+    border-bottom-color: #222;
+    color: #999;
+    display: inline-block;
+    margin-bottom: -1px;
+    padding: .25em .75em;
+    text-decoration: none;
+  }
+
+  .TopNav__Link.is-active {
+    border-bottom-color: #FFFFFF;
+    color: #222;
+  }
