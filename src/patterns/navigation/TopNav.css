@@ -22,7 +22,12 @@
     text-decoration: none;
   }
 
+  .TopNav__Link:hover:not(.is-active) {
+    background-color: #ececec;
+  }
+
   .TopNav__Link.is-active {
     border-bottom-color: #FFFFFF;
     color: #222;
+    cursor: default;
   }
