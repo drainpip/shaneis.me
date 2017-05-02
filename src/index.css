@@ -75,7 +75,8 @@ a:disabled {
 }
 
 p > a {
-  border: 1px solid;
+  border-style: solid;
+  border-width: 1px;
   display: inline-block;
   padding: 0 .25em;
   text-decoration: none;
