@@ -20,19 +20,17 @@ class App extends Component {
       <Router>
         <div className="App">
           <header className="App-header">
-            <ContentContainer>
-              <Switch>
-                <Route exact path="/" component={HomeHeader} />
-                <Route component={TopNav} />
-              </Switch>
-            </ContentContainer>
+            <Switch>
+              <Route exact path="/" component={HomeHeader} />
+              <Route component={TopNav} />
+            </Switch>
           </header>
           <section className="App-body">
             <ContentContainer>
               <Switch>
                 <Route exact path="/" component={Home} />
-                <Route path="/experiments/" component={ExperimentsHome} />
-                <Route path="/organization/" component={OrganizationHome} />
+                <Route path="/experimenting/" component={ExperimentsHome} />
+                <Route path="/organizing/" component={OrganizationHome} />
                 <Route component={NotFound} />
               </Switch>
             </ContentContainer>

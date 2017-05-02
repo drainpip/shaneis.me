@@ -1,7 +1,6 @@
 .TopNav {
   margin: 0;
   padding: 0;
-
 }
 
   .TopNav > li {
@@ -11,13 +10,10 @@
   }
 
   .TopNav .TopNav__Link {
-    border: 1px solid;
-    border-bottom-color: #222;
     color: #999;
     display: inline-block;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
-    margin-bottom: -1px;
     padding: .25em .75em;
     text-decoration: none;
   }
@@ -27,7 +23,17 @@
   }
 
   .TopNav__Link.is-active {
-    border-bottom-color: #FFFFFF;
-    color: #222;
-    cursor: default;
+    color: #0074D9;
   }
+
+.TopNav__Top {
+  border: none;
+  border-top: 1px solid #222;
+  left: 50%;
+  margin-bottom: 0;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+}
