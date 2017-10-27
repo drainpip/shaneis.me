@@ -1,5 +1,4 @@
 .App {
-
 }
 
 .App-header {
@@ -8,14 +7,13 @@
   padding-top: 1rem;
 }
 
-  .App-header__title.has-navigation {
-    font-size: 90%;
-  }
+.App-header__title.has-navigation {
+  font-size: 90%;
+}
 
-  .App-header__quote {
-    color: #777;
-  }
+.App-header__quote {
+  color: #777;
+}
 
 .App-body {
-
 }
