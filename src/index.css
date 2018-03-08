@@ -19,12 +19,17 @@ body {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #222;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   margin-top: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 p {
@@ -48,7 +53,7 @@ ul ol {
 
 dt {
   font-weight: 700;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
 dd {
@@ -58,7 +63,7 @@ dd {
 
 a,
 a:default {
-  color: #0074D9;
+  color: #0074d9;
 }
 
 a:active,
@@ -67,22 +72,22 @@ a:focus {
 }
 
 a:visited {
-  color: #B10DC9;
+  color: #b10dc9;
 }
 
 a:disabled {
-  color: #AAAAAA;
+  color: #aaaaaa;
 }
 
 p > a {
   border-style: solid;
   border-width: 1px;
   display: inline-block;
-  padding: 0 .25em;
+  padding: 0 0.25em;
   text-decoration: none;
 }
 
 p > a:hover {
   background-color: #85144b;
-  color: #FFFFFF;
+  color: #ffffff;
 }

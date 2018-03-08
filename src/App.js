@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import ContentContainer from "./patterns/containers/Content";
-import "./App.css";
+import ContentContainer from './patterns/containers/Content';
+import './App.css';
 
 class App extends Component {
   render() {
@@ -24,8 +24,8 @@ class App extends Component {
                 <p>
                   I've always had grandiose plans for a personal website that
                   have never come to fruition. Instead my creative energy goes
-                  into work or fanciful things like writing stories for an{" "}
-                  <a href="https://copy-of-kate.com/">audience of one</a>.
+                  into work or fanciful things like writing stories for an
+                  audience of one.
                 </p>
                 <p>
                   Something about me: I'm pretty good at my three C's: Cars,
@@ -39,10 +39,10 @@ class App extends Component {
                 </p>
                 <h3>More?</h3>
                 <p>
-                  I have a <a href="https://github.com/drainpip">Github</a>{" "}
-                  profile for you to check out, my work history over on{" "}
+                  I have a <a href="https://github.com/drainpip">Github</a>{' '}
+                  profile for you to check out, my work history over on{' '}
                   <a href="https://www.linkedin.com/in/shaneduff/">LinkedIn</a>,
-                  and if you'd like to see me{" "}
+                  and if you'd like to see me{' '}
                   <a href="http://twitter.com/drainpip">unfiltered</a> have at
                   it.
                 </p>
@@ -52,9 +52,9 @@ class App extends Component {
           <Route
             path="/"
             render={({ location }) => {
-              if (typeof window.ga === "function") {
-                window.ga("set", "page", location.pathname + location.search);
-                window.ga("send", "pageview");
+              if (typeof window.ga === 'function') {
+                window.ga('set', 'page', location.pathname + location.search);
+                window.ga('send', 'pageview');
               }
               return null;
             }}

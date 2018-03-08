@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NotFound = (props) => {
+const NotFound = props => {
   return (
     <article>
       <p>There's nothing here.</p>
