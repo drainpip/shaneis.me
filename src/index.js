@@ -1,7 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import 'normalize.css';
-import './index.css';
-import App from './App';
+import React from "react";
+import { render } from "react-snapshot";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import "normalize.css";
+import "./index.css";
+
+import App from "./App";
+
+render(<App />, document.getElementById("root"));
