@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|PT+Serif');
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif|Oxygen");
 
 html {
   box-sizing: border-box;
@@ -11,8 +11,9 @@ html {
 }
 
 body {
-  color: #555;
-  font-family: 'PT Serif', serif;
+  color: #434249;
+  font-family: "Oxygen", sans-serif;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
   margin: 0;
@@ -26,7 +27,7 @@ h4,
 h5,
 h6 {
   color: #222;
-  font-family: 'Oswald', sans-serif;
+  font-family: "IBM Plex Serif", serif;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 0.5rem;

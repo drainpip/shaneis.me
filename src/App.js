@@ -1,65 +1,96 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { css } from "emotion";
 
-import ContentContainer from './patterns/containers/Content';
-import './App.css';
+const themeColor = {
+  contrastColor: "#ede8d1",
+  dark: "#434249",
+  red: "#a21434"
+};
+
+const heroHeader = css`
+  background-image: url("https://placeimg.com/1000/400/arch/grayscale");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 3px solid ${themeColor.dark};
+  height: 60vh;
+`;
+
+const navbar = css`
+  height: 3rem;
+  background-color: ${themeColor.dark};
+`;
+
+const menu = css`
+  display: flex;
+  height: 3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  > li {
+    color: ${themeColor.contrastColor};
+    line-height: 1;
+    margin: auto 1rem;
+  }
+`;
+
+const masthead = css`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: calc(60vh - 3rem);
+  justify-content: center;
+`;
+
+const redTextBackground = css`
+  background-color: ${themeColor.red};
+  color: ${themeColor.contrastColor};
+  line-height: 1.75;
+  padding: 0 0.5rem;
+`;
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
-          <header className="App-header">
-            <ContentContainer>
-              <h1 className="App-header__title">Shane is me</h1>
-              <p className="App-header__quote">
-                "But who is wurs shod, than the shoemakers wyfe, With shops full
-                of newe shapen shoes all hir lyfe?"
-              </p>
-            </ContentContainer>
+        <React.Fragment>
+          <header className={heroHeader}>
+            <nav className={navbar}>
+              <ul className={menu}>
+                <li>Logo</li>
+                <li>Products</li>
+                <li>About</li>
+                <li>Contact</li>
+              </ul>
+            </nav>
+            <div className={masthead}>
+              <h1 className={redTextBackground}>Shane is me</h1>
+              <h4 className={redTextBackground}>
+                Win-win survival strategies to ensure proactive domination
+              </h4>
+            </div>
           </header>
-          <section className="App-body">
-            <ContentContainer>
-              <article>
-                <p>
-                  I've always had grandiose plans for a personal website that
-                  have never come to fruition. Instead my creative energy goes
-                  into work or fanciful things like writing stories for an
-                  audience of one.
-                </p>
-                <p>
-                  Something about me: I'm pretty good at my three C's: Cars,
-                  Computers and Canines. I have been an ASE Parts Specialist
-                  (P1, P2 and P4) so no mechanic can cheat me. I have been
-                  tinkering with Computer hardware and programming since the
-                  early 90's. I also spent a few years learning about Canine
-                  behavior including six months of direct work with a senior
-                  trainer - I did this more for personal learning than starting
-                  a business, but I'm certainly open to such things.
-                </p>
-                <h3>More?</h3>
-                <p>
-                  I have a <a href="https://github.com/drainpip">Github</a>{' '}
-                  profile for you to check out, my work history over on{' '}
-                  <a href="https://www.linkedin.com/in/shaneduff/">LinkedIn</a>,
-                  and if you'd like to see me{' '}
-                  <a href="http://twitter.com/drainpip">unfiltered</a> have at
-                  it.
-                </p>
-              </article>
-            </ContentContainer>
+          <section>
+            <p>This will be our three things</p>
+          </section>
+          <section>
+            <p>About</p>
+          </section>
+          <section>
+            <p>Contact</p>
           </section>
           <Route
             path="/"
             render={({ location }) => {
-              if (typeof window.ga === 'function') {
-                window.ga('set', 'page', location.pathname + location.search);
-                window.ga('send', 'pageview');
+              if (typeof window.ga === "function") {
+                window.ga("set", "page", location.pathname + location.search);
+                window.ga("send", "pageview");
               }
               return null;
             }}
           />
-        </div>
+        </React.Fragment>
       </Router>
     );
   }
