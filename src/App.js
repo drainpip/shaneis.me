@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
+import Features from "./Features";
 import Header from "./Header";
 
 class App extends React.Component {
@@ -9,9 +10,7 @@ class App extends React.Component {
       <Router>
         <React.Fragment>
           <Header />
-          <section>
-            <p>This will be our three things</p>
-          </section>
+          <Features />
           <section>
             <p>About</p>
           </section>
