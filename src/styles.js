@@ -4,7 +4,9 @@ export const themeColor = {
   black: "#222",
   contrastColor: "#ede8d1",
   dark: "#434249",
-  red: "#a21434"
+  red: "#a21434",
+  redDarker: "#560000",
+  redLighter: "#d54767"
 };
 
 export const themeSizes = {
@@ -39,7 +41,7 @@ injectGlobal`
   h4,
   h5,
   h6 {
-    color: ${themeColor.black};
+    color: ${themeColor.red};
     font-family: "Ultra", serif;
     font-weight: 400;
     margin-top: 0;
@@ -61,17 +63,14 @@ injectGlobal`
     color: ${themeColor.red};
   }
 
-  a:active,
-  a:focus {
-    color: #85144b;
-  }
-
   a:visited {
-    color: #b10dc9;
+    color: ${themeColor.redDarker};
   }
 
-  a:disabled {
-    color: #aaaaaa;
+  a:active,
+  a:focus,
+  a:hover {
+    color: ${themeColor.redLighter};
   }
 `;
 
